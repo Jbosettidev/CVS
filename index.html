@@ -1,28 +1,106 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Melhores Práticas de Branching e PR</title>
-  </head>
-  <body>
-    <h1>Mini-Guia: Branching e Pull Request</h1>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulação e Resolução de Conflitos</title>
 
-    <h2>Estratégias de Branching</h2>
-    <p>Branching permite criar linhas de desenvolvimento independentes. Exemplo: usar branches para novas funcionalidades ou correções.</p>
+    <style>
+        /* Fonte moderna Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-    <h2>Fluxo de Pull Request</h2>
-    <p>Pull Requests permitem revisar código antes de integrar à principal. Sempre peça revisão e resolva conflitos antes de aceitar.</p>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(135deg, #3a5bff, #72b2ff);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    <h2>Commits Atômicos</h2>
-    <p>Faça commits pequenos e focados. Exemplo: 1 commit por funcionalidade ou bug resolvido.</p>
+        /* Container com efeito glassmorphism */
+        .card {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 40px;
+            width: 480px;
+            border-radius: 20px;
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+            animation: slideUp 0.8s ease;
+        }
 
-    <h2>Resolução de Conflitos</h2>
-    <p>Conflitos aparecem quando dois trabalhos afetam a mesma linha de código. Resolva localmente, teste e faça push corrigido.</p>
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
 
-    <h2>Revisão de Código</h2>
-    <p>Outra pessoa revisa cada PR, corrige erros e sugere melhorias antes do merge.</p>
+        p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-top: 10px;
+        }
 
-    <h2>Automação</h2>
-    <p>Ferramentas automáticas (CI/CD) verificam testes automaticamente após cada push ou PR.</p>
+        /* Botão estiloso */
+        .btn {
+            margin-top: 25px;
+            padding: 12px 26px;
+            background: rgba(255,255,255,0.25);
+            border: 1px solid rgba(255,255,255,0.4);
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #fff;
+            cursor: pointer;
+            backdrop-filter: blur(10px);
+            transition: 0.3s ease;
+        }
 
-  </body>
-</html
+        .btn:hover {
+            background: rgba(255,255,255,0.45);
+            transform: translateY(-2px);
+        }
+
+        /* Animação */
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsividade */
+        @media (max-width: 500px) {
+            .card {
+                width: 90%;
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 1.4rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Notas da prova de Banco de Dados com o lendário John Victor Games</h1>
+
+        <p>Vicente = 9,5 • João = 8,5 • Guilherme = 5,5</p>
+
+        <button class="btn">Ver Estatísticas</button>
+    </div>
+</body>
+</html>
